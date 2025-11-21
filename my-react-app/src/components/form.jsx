@@ -1,0 +1,48 @@
+import { useState } from "react";
+
+const categories = [
+  "General",
+  "World",
+  "Nation",
+  "Business",
+  "Technology",
+  "Entertainment",
+  "Sports",
+  "Science",
+  "Health"
+];
+
+function CategorySelector({ onSubmit }) {
+  const [selected, setSelected] = useState("");
+
+  const handleSubmit = () => {
+    if (selected) {
+      onSubmit(selected);
+    } else {
+      alert("Please select a category");
+    }
+  };
+
+  return (
+    <div>
+      <label>
+        Choose a category: 
+        <select
+          value={selected}
+          onChange={(e) => setSelected(e.target.value)}
+        >
+          <option value="">-- Select one --</option>
+          {categories.map((cat) => (
+            <option key={cat} value={cat}>
+              {cat}
+            </option>
+          ))}
+        </select>
+      </label>
+
+      <button onClick={handleSubmit}>Get News</button>
+    </div>
+  );
+}
+
+export default CategorySelector;
