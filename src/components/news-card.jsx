@@ -1,6 +1,6 @@
 function NewsCard({ newsItem }) {
   return (
-    <div>
+    <div className="news-card">
       <h3>{newsItem.title}</h3>
       {newsItem.image && (
         <img src={newsItem.image} alt={newsItem.title} />

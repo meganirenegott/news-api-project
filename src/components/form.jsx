@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-const categories = [
+
+function CategorySelector({ onSubmit }) {
+  const categories = [
   "General",
   "World",
   "Nation",
@@ -12,7 +14,6 @@ const categories = [
   "Health"
 ];
 
-function CategorySelector({ onSubmit }) {
   const [selected, setSelected] = useState("");
 
   const handleSubmit = () => {
@@ -24,7 +25,7 @@ function CategorySelector({ onSubmit }) {
   };
 
   return (
-    <div>
+    <div className="form">
       <label>
         Choose a category: 
         <select

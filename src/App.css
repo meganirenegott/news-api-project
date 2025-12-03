@@ -1,13 +1,12 @@
 #root {
   max-width: 1280px;
-  margin: 2 auto;
+  margin: 0 auto;
   padding: 2rem;
   border-radius: 8px;
-  background-color: #F7F7F7;
+  background-color: white;
   color: black;
+
 }
-
-
 
 .logo {
   height: 6em;
@@ -41,11 +40,16 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
+.form {
+  align-items: center;
+}
+.news-card {
+text-align: left;
+}
 .card {
   padding: 2em;
   background-color: white;
-  text-align: center;
+  text-align: left;
 }
 
 .read-the-docs {
@@ -55,4 +59,7 @@
 img {
   width: 200px;
   
+}
+body {
+  background-color: #F7F7F7;
 }
