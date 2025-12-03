@@ -26,7 +26,8 @@ function App() {
   }
 
   return (
-  <>
+    <>
+      <div className="breaking-news">
     <h1>Breaking News!</h1>
 
     <CategorySelector onSubmit={callApi} />
@@ -36,6 +37,7 @@ function App() {
     {articles.map((article) => (
       <NewsCard key={article.title} newsItem={article} />
     ))}
+        </div>
   </>
 );
 }

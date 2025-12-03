@@ -40,7 +40,7 @@ function CategorySelector({ onSubmit }) {
         </select>
       </label>
 
-      <button onClick={handleSubmit}>Get News</button>
+      <button className="form-button" onClick={handleSubmit}>Get News</button>
     </div>
   );
 }

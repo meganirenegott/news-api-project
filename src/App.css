@@ -1,9 +1,13 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 2 auto;
   padding: 2rem;
-  text-align: center;
+  border-radius: 8px;
+  background-color: #F7F7F7;
+  color: black;
 }
+
+
 
 .logo {
   height: 6em;
@@ -17,7 +21,12 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+.form-button {
+  background-color: #517AA1;
+  color: white;
+  margin: 1rem;
 
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,8 +44,15 @@
 
 .card {
   padding: 2em;
+  background-color: white;
+  text-align: center;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+img {
+  width: 200px;
+  
 }
