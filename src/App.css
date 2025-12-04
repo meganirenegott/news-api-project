@@ -40,12 +40,14 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+/* styles for UI form */
 .form {
   align-items: center;
 }
 .news-card {
 text-align: left;
 }
+/* styles for each new article card item */
 .card {
   padding: 2em;
   background-color: white;
@@ -56,10 +58,12 @@ text-align: left;
   color: #888;
 }
 
+/* resizing images from API call */
 img {
   width: 200px;
   
 }
+/* white background */
 body {
   background-color: #F7F7F7;
 }
