@@ -26,30 +26,36 @@
   margin: 1rem;
 
 }
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+/* -----styles for UI form-------- */
+.breaking-news {
+ 
 }
-/* styles for UI form */
 .form {
   align-items: center;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: -2px 3px 1px 4px #F7F7F7;
+  border-radius: 8px;
 }
+/* .form p {
+  text-align: left;
+  
+} */
 .news-card {
-text-align: left;
+  text-align: left;
+  
 }
-/* styles for each new article card item */
+.no-news-found {
+  text-align: left;
+  padding: 32px;
+  box-shadow: -2px 3px 20px 4px #F7F7F7;
+  border-radius: 8px;
+}
+/* -------styles for each new article card item -------*/
 .card {
-  padding: 2em;
+  /* padding: 2em; */
   background-color: white;
   text-align: left;
 }

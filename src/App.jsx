@@ -35,7 +35,7 @@ function App() {
 
     <CategorySelector onSubmit={callApi} />
 {/* user message for if there are no news articles in a selected category */}
-    {articles.length === 0 && <p>No news found.</p>}
+    {articles.length === 0 && <p className="no-news-found">No news found.</p>}
 {/* articles shown back to the user */}
     {articles.map((article) => (
       <NewsCard key={article.title} newsItem={article} />
